@@ -1,0 +1,287 @@
+@media screen and (max-width: 996px) {
+  .checkbtn {
+    float: right;
+    width: 40px;
+    height: 45px;
+    background: none;
+    border: none;
+    background-image: url("../assets/images/burger.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    outline: none;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  .change {
+    background-image: url("../assets/images/burger open.png");
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'josefin sans', sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 40px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-height: 10vh;
+}
+
+header .logo img {
+  width: 50px;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+header ul li a {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 15pt;
+  font-weight: 300;
+}
+
+header ul li a::after {
+  content: '';
+  background: #178dfc;
+  width: 0;
+  display: block;
+  margin: auto;
+  height: 5px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+header ul li a.active::after {
+  width: 100%;
+}
+
+section {
+  background-image: url("../assets/images/water mark logo.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 350px;
+}
+
+section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+section .container .content .box1 {
+  width: 650px;
+  -webkit-transform: translate(15%, -5%);
+          transform: translate(15%, -5%);
+}
+
+section .container .content .box1 .heading {
+  font-size: 30pt;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 1px;
+  font-family: 'josefin sans';
+  margin-bottom: 20px;
+}
+
+section .container .content .box1 .text {
+  font-size: 17pt;
+  color: #666;
+  padding-right: 100px;
+}
+
+section .container .content .box1 .cta {
+  padding: 10px 20px;
+  font-size: 16pt;
+  background: none;
+  outline: none;
+  border: none;
+  border-left: 10px solid black;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+section .container .content .box2 {
+  width: 50%;
+  height: 100%;
+  background: url(../assets/images/player-bg.png);
+  background-size: 650px 470px;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+section .container .content .box2 img {
+  width: 65%;
+  -webkit-transform: translate(100px, 120px);
+          transform: translate(100px, 120px);
+}
+
+@media (max-width: 996px) {
+  header {
+    padding: 40px 30px;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .logo img {
+    width: 50px;
+  }
+  header .menu {
+    position: absolute;
+    top: 10vh;
+    left: 25%;
+    display: block;
+    padding: 10px 50px;
+    min-width: 300px;
+    text-align: center;
+    background: #2a2c37;
+    height: 30vh;
+    z-index: 999;
+    -webkit-transition: .5s;
+    transition: .5s;
+    -webkit-transform: translate(0, -1000vh);
+            transform: translate(0, -1000vh);
+  }
+  header .menu li {
+    display: block;
+    margin: 20px;
+  }
+  header .menu li a {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 15pt;
+    font-weight: 300;
+  }
+  header .menu li a::after {
+    content: '';
+    background: #178dfc;
+    width: 0;
+    display: block;
+    margin: auto;
+    height: 5px;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  header .menu li a.active::after {
+    width: 100%;
+  }
+  header .change {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  .container .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+    width: 100%;
+  }
+  .container .content .box1 {
+    width: 100%;
+    -webkit-transform: translate(0, 60%);
+            transform: translate(0, 60%);
+    text-align: center;
+    padding: 50px;
+  }
+  .container .content .box1 .heading {
+    font-size: 25pt;
+    font-weight: 400;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+  .container .content .box1 .text {
+    font-size: 17pt;
+    color: #666;
+  }
+  .container .content .box1 .cta {
+    padding: 5px 10px;
+    font-size: 13pt;
+    background: none;
+    outline: none;
+    border: none;
+    border-left: 10px solid black;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-top: 20px;
+  }
+  .container .content .box2 {
+    margin-top: 50px;
+    width: 80%;
+  }
+  .container .content .box2 img {
+    width: 100%;
+    -webkit-transform: translate(0, 23%);
+            transform: translate(0, 23%);
+  }
+}
+/*# sourceMappingURL=index.css.map */

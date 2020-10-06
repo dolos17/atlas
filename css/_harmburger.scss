@@ -1,0 +1,25 @@
+
+@media screen and (max-width: 996px) {
+    .checkbtn {
+        float: right;
+        width: 40px;
+        height: 45px;
+        background: none;
+        border: none;
+        background-image: url('../assets/images/burger.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        outline: none;
+        transition: .5s;
+    }
+
+    
+
+    .change {
+        background-image: url('../assets/images/burger\ open.png');   
+    } 
+
+
+}
+
